@@ -37,3 +37,28 @@ img {
   height: auto;
   object-fit: cover;
 }
+
+input,select,textarea {
+  outline: none;
+  box-shadow: none;
+  font-family: @font1;
+  color: @black;
+}
+
+textarea {
+  resize: none;
+}
+
+input,
+textarea {
+  &::placeholder {
+    color: @grey;
+  }
+}
+
+input:focus,
+textarea:focus {
+  &::placeholder {
+    color: transparent;
+  }
+}
