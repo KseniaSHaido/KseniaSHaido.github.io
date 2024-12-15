@@ -1,12 +1,13 @@
 .container() {
   box-sizing: border-box;
+  margin: 0 auto;
   width: 100%;
-  max-width: 1414px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 40px;
   padding-right: 40px;
-  margin: 0 auto;
+  max-width: 1414px;
+  width: 100%;
 }
 
 .display-none() {
@@ -30,4 +31,13 @@
   visibility: hidden !important;
   pointer-events: none !important;
   pointer-events: none !important;
+}
+
+.show-event-popup {
+  body {
+    overflow: hidden;
+  }
+  #eventPP {
+    display: flex;
+  }
 }

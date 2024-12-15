@@ -1,8 +1,33 @@
 <!DOCTYPE html>
-<html>
-@@include('blocks/head.html')    
+<html lang="ru" class="show-event-popup">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Open Sans"
+        rel="stylesheet"
+        />
+        <link rel="stylesheet" href="styles/styles.min.css"
+        />
+      </head>   
   <body class="body">
-    @@include('blocks/page-header.html')
+    <header class="page-header">
+        <div class="page-header__container">
+          <a href="#" class="page-header__logo">
+            <img
+              src="./assets/images/logo.svg"
+              class="page-header__logo-icon"
+              alt="logo"
+            />
+          </a>
+          <div class="page-header__nav">
+            <a href="" class="page-header__nav-link">Мероприятия</a>
+            <a href="" class="page-header__nav-link">Блок</a>
+            <a href="" class="page-header__nav-link">О нас</a>
+            <a href="" class="page-header__nav-link">Контакты</a>
+          </div>
+          <button type="button" class="page-header__btn btn"></button>
+        </div>
+      </header>
     <main class="main">
       <div class="events">
         <div class="events__listing listing">
@@ -119,7 +144,9 @@
           </div>
         </div> 
     </main>
-    @@include('blocks/page-footer.html')
+    <footer class="page-footer">
+        footer     
+      </footer>
     @@include('blocks/event-pp.html')
   </body>
 </html>

@@ -4,8 +4,8 @@
     gap: 15px;
     
     &__item {
-      box-sizing: border-box;
       position: relative;
+      box-sizing: border-box;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
@@ -22,21 +22,6 @@
     &__input {
       .is-hidden();
     }
-    &__marker {
-        box-sizing: border-box;
-        display: block;
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 23px;
-        height: 23px;
-        border: 2px solid @black;
-        border-radius: 50%;
-        padding: 3px;
-        background-clip: content-box;
-        background-color: transparent;
-        transition: background-color 0.2s;
-    }
 
     &__input {
         .is-hidden;
@@ -46,6 +31,22 @@
           }
         }
     }
+
+    &__marker {
+      box-sizing: border-box;
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 23px;
+      height: 23px;
+      border: 2px solid @black;
+      border-radius: 50%;
+      padding: 3px;
+      background-clip: content-box;
+      background-color: transparent;
+      transition: background-color 0.2s;
+  }
 
     &__label {
         margin-left: 20px;
