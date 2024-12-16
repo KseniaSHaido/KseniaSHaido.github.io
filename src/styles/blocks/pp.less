@@ -1,6 +1,6 @@
 .pp {
     display: none;
-    display: flex;
+    //display: flex;
     box-sizing: border-box;
     position: fixed;
     top: 0;
@@ -8,6 +8,7 @@
     right: 0;
     bottom: 0;
     padding: 90px 40px 50px;
+    backdrop-filter: blur(50px);
     background-color: fade(@grey, 98%);
     overflow-y: auto;
     z-index: 110;
@@ -35,7 +36,7 @@
         width: 100%;
         max-width: 950px;
         margin: 0 auto;
-        padding: 0 40px 40 px;
+        padding: 0 40px 40px;
     }
     &__title {
         box-sizing: border-box;

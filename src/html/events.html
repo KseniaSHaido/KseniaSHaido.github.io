@@ -30,8 +30,7 @@
       </header>
     <main class="main">
       <div class="events">
-        <div class="events__listing listing">
-            <h2 class="listing__title section-title">Мероприятия</h2>
+        <!--<div class="events__listing listing">
             <div class="listing__events-list">
                 <article class="event-card listing__event-card">
                     <a href="#" class="event-card__link">
@@ -141,12 +140,11 @@
                     </a>
                 </article>
             </div>
-          </div>
+          </div>-->
+          @@include('blocks/table.html', {"class": "events_tariffs-table"})
         </div> 
     </main>
-    <footer class="page-footer">
-        footer     
-      </footer>
+    <footer class="page-footer">footer</footer>
     @@include('blocks/event-pp.html')
   </body>
 </html>
