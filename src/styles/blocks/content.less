@@ -43,7 +43,8 @@
     }
     ol,
     ul,
-    p {
+    p,
+    blockquote {
       margin: 20px 0;
       font-family: @font1;
       &:first-child {
@@ -63,15 +64,15 @@
     ul > li {
       box-sizing: border-box;
       position: relative;
-      padding-left: 20px;
+      padding-left: 14px;
       &::before {
         content: "";
         display: block;
         position: absolute;
-        top: 8px;
+        top: 7px;
         left: 0;
-        width: 6px;
-        height: 6px;
+        width: 4px;
+        height: 4px;
         border-radius: 50%;
         background-color: @red;
         pointer-events: none;
@@ -94,7 +95,7 @@
     }
     ul > li,
     ol > li {
-      margin: 0 0 8px;
+      margin: 0 0 10px;
       cursor: default;
       &:last-child {
         margin-bottom: 0;
@@ -141,43 +142,24 @@
         margin-bottom: 0;
       }
     }
-    img {
-      &[align],
-      &.alignright {
-        margin: 5px 0;
-        & + figcaption {
-          display: none;
-        }
-      }
-      &[align="right"],
-      &.alignright {
-        margin-left: 10px;
-      }
-      &.alignright {
-        float: right;
-      }
-      &[align="left"],
-      &.alignleft {
-        margin-right: 10px;
-      }
-      &.alignleft {
-        float: left;
-      }
-    }
+ 
+
     a {
       font-weight: 600;
+      text-decoration-color: @black;
       color: @black;
       text-decoration: underline;
-      transition: color 0.2s;
+      transition: text-decoration-color 0.2s;
       cursor: pointer;
       &:hover {
-        color: @red;
+        text-decoration-color: transparent;
       }
     }
     blockquote {
-      position: relative;
-      margin: 30px 0;
-      padding: 0 0 0 20px;
+      box-sizing: border-box;
+      margin: 25px 0 30px;
+      position: relative;  
+      padding: 10px 0 10px 25px;
       color: fade(@black, 90%);
       font-style: normal;
       font-weight: 600;
@@ -202,4 +184,44 @@
       font-weight: 700;
     }
   }
-  
+
+      figure {
+        img {
+        margin: 0;
+        display: block;
+        width: 100%;
+      }    
+    }
+
+    figcaption {
+      margin: 15px 0 0;
+      text-align: left;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 1.3;
+      color: @black;
+    }
+
+    img {
+      &[align],
+      &.alignright {
+        margin: 5px 0;
+        & + figcaption {
+          display: none;
+        }
+      }
+      &[align="right"],
+      &.alignright {
+        margin-left: 10px;
+      }
+      &.alignright {
+        float: right;
+      }
+      &[align="left"],
+      &.alignleft {
+        margin-right: 10px;
+      }
+      &.alignleft {
+        float: left;
+      }
+    }  
