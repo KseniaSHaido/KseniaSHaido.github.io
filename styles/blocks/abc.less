@@ -1,0 +1,96 @@
+.abc {
+    &__text {
+        box-sizing: border-box;
+        color: @black;
+        padding-left: 40px;
+        text-align: center;
+        margin-top: 97px;
+        margin-bottom: 35px;
+        font-family: @font2;  
+        font-weight: 30;
+        font-size: 22px; 
+    }
+    &__container {
+        .container;
+        padding-left: 400px;
+        padding-right: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__right-block {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 52px;
+        width: 272px;
+        font-family: @font1;  
+        font-weight: 16px;
+    }
+    
+    .btn {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 15px 40px;
+        background-color: transparent;
+        text-decoration: none;
+        border: 1px solid #1F1E1E;
+        border-radius: 0;
+        outline: none;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.3;
+        color: #1F1E1E;
+        transition: background-color 0.2s, color 0.2s;
+    }
+    
+    .btn:hover,
+    .btn:active {
+        border: 1px solid @red;
+        background-color: @red;
+        color: #ffffff;
+    }
+    &__text2 {
+        margin-top: 130px;
+    }
+    &__container2 {
+        .container;
+        padding-left: 400px;  
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__left-block {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-family: @font2;  
+        font-weight: 36px;
+    }
+    
+    .btns {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 7px 250px;
+        background-color: transparent;
+        text-decoration: none;
+        border: 1px solid #1F1E1E;
+        border-radius: 0;
+        outline: none;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 1.3;
+        color: #1F1E1E;
+        transition: background-color 0.2s, color 0.2s;
+    }
+    
+    .btns:hover,
+    .btns:active {
+        background-color: #1F1E1E;
+        color: #ffffff;
+    }
+}
