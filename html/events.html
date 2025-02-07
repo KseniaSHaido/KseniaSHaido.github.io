@@ -129,11 +129,15 @@
           @@include('blocks/table.html', {"class": "events_tariffs-table"})            
           </section>
 
+          <section class="events__block">
+
+            @@include('blocks/offers.html', {"class": "events__offers"})          
+            @@include('blocks/info.html', {"class": "events__info"}) 
+            </section>
+
         </div> 
     </main>
+    @@include('blocks/page-footer.html') 
     @@include('blocks/event-pp.html')    
-    <footer class="page-footer">      
-        @@include('blocks/page-footer.html')
-    </footer>
   </body>
 </html>
