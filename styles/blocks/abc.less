@@ -83,6 +83,11 @@
         align-items: center;
         font-family: @font2;  
         font-weight: 36px;
+        @media @bw768 {
+            padding-left: 20px;
+            padding-right: 20px;
+          }
+        
     }
     
     .btns {
@@ -100,5 +105,20 @@
         background-color: #1F1E1E;
         color: #ffffff;
         margin-bottom: 150px;
+        @media @bw1020 {
+            padding: 6px 183px;
+            font-weight: 300;
+            font-size: 24px;
+          }
+          @media @bw600 {
+            padding: 6px 140px;
+            font-weight: 300;
+            font-size: 19px;
+          }
+          @media @bw400 {
+            padding: 11px 105px;
+            font-weight: 300;
+            font-size: 16px;
+          }
     }
 }
