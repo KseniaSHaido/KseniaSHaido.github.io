@@ -1,5 +1,7 @@
 <section class="listing @@class">
-    <h2 class="listing__title section-title">Мероприятия</h2>
+  <div class="section-title2">
+    <h2 class="listings__title section-title2">БЛОГ</h2>
+</div>
     <div class="listing__article-list">
       <!-- prettier-ignore -->
       @@loop('article-card.html', [
@@ -41,5 +43,11 @@
       }
       ])
     </div>
-    <!-- Кнопка "Показать все" -->
+    <div class="events-card__container">
+      <div class="events-card__right-block">
+      <a href="#" class="events-card__user-btn btn">
+        Смотреть все
+      </a>
+     </div>
+      </div>
   </section>
