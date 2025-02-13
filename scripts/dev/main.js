@@ -1,4 +1,4 @@
-const { default: Swiper } = require("swiper");
+//const { default: Swiper } = require("swiper");
 
 (function () {
     "use strict";
@@ -13,7 +13,7 @@ const { default: Swiper } = require("swiper");
     const eventPP = document.querySelector("#js-eventPP")
 
     if (eventPP) {
-        const eventOpebBtn = document.querySelector("#js-eventOpebBtn")
+        const eventOpebBtn = document.querySelector("#js-eventOpenBtn")
         
         const closeEventPP = function (event) {
             function close() {
