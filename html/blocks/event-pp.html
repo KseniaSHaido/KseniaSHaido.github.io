@@ -5,7 +5,7 @@
             type="button"
             title="Закрыть"
             class="pp__x-btn x-btn js-ppCloseBtn">
-                <svg class="x-btn__icon" width="12" height="12">
+                <svg class="x-btn__icon" width="24" height="24">
                 <use xlink:href="assets/icons/symbols.svg#x">
                 </use>
                 </svg>   
@@ -14,7 +14,7 @@
 
         <div class="pp__container">
             <h2 class="pp__title">Заполните форму<br />и мы подберём площадку</h2>
-            <form class="pp__form form" id="js-eventForm>
+            <form class="pp__form form" >
                 <div class="form__list">
                     <div class="form__field form__field--w50 field">
                         <h6 class="field__title">Формат мероприятия</h6>                      
@@ -135,8 +135,9 @@
                     </div>
                 </div>               
 
-                <label class="form__field form__field--w50 field">
-                    <span class="field__title">Есть пожелания? Напишите нам:</span>
+                <label class="form__field field">
+                    <span class="field__title">
+                        Есть пожелания? Напишите нам:</span>
 
                     <textarea 
                     name="text"
@@ -157,7 +158,7 @@
 
             <div class="form__btns">
                 <button type="submit" class="form__btn btn">Отправить</button>
-                <button type="submit" class="form__close-btn">Закрыть</button>
+                <button type="button" class="form__close-btn js-ppCloseBtn">Закрыть</button>
             </div>    
             </form>
         </div>     
