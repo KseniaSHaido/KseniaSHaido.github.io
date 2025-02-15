@@ -43,6 +43,9 @@
       background-color: transparent;
       border: 1px solid @black;
       transition: background-color 0.2s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     &__label {
@@ -57,7 +60,22 @@
           line-height: 19px;
         }
     }      
-    
-
+    &--red {
+      color: @red;
+      .check__mark {
+        border-color: @red;
+      }
+      .check__input {
+        &:checked {
+          & ~ .check__mark {
+            background-color: @red;
+          }
+        }
+      }
+    }
+    &--disabled {
+      pointer-events: none;
+      opacity: 0.5;
+    }
 
 }
