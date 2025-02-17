@@ -97,21 +97,22 @@ function jsCopy() {
 function copy() {
   return gulp
     .src(resources.static, {
-      base: "src"
+      base: "src",
+      encoding: false
     })
     .pipe(gulp.dest("dist/"));
 }
 function images() {
   return gulp
-    .src(resources.images)
+    .src(resources.images, { encoding: false })
     .pipe(
       imagemin([
         imagemin_gifsicle({ interlaced: true }),
         imagemin_mozjpeg({ quality: 100, progressive: true }),
-        imagemin_optipng({ optimizationLevel: 3 })
+        imagemin_optipng({ optimizationLevel: 5 })
       ])
     )
-    .pipe(gulp.dest("dist/assets/images"));
+    .pipe(gulp.dest('dist/assets/images'));
 }
 function svgSprite() {
   return gulp
