@@ -62,6 +62,21 @@
       overflow: hidden;
     }
   }
+  .page-header__nav {
+    @media @bw1020 {
+      transform: translateX(0);
+    }
+  }
+  .page-header__nav-toggle {
+    &::before {
+      transform: translate(0px, 6px) rotate(45deg);
+      box-shadow: none;
+    }
+    &::after {
+      transform: translate(0px, -6px) rotate(-45deg);
+    }
+  }
+}
 
 .page-header__nav {
   @media @bw1020 {
@@ -77,7 +92,6 @@
   &::after {
     transform: translate(0px, -6px) rotate(-45deg);
   }
-}
 }
 
 .show-event-popup {
