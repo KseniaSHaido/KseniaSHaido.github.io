@@ -8,15 +8,20 @@
       <a href="#" class="page-footer__block-link">Наши проекты</a>
       <a href="#" class="page-footer__block-link">Контакты</a>
     </div>
-    <form class="page-footer__subscribe-form subscribe-form">
+    <form action="https://jsonplaceholder.typicode.com/posts" 
+    class="page-footer__subscribe-form subscribe-form" 
+    id="js-subscribeForm">
       <h4 class="subscribe-form__title">
         Подпишись и будь в курсе происходящего
       </h4>
       <div class="subscribe-form__wrapper">
         <div class="subscribe-form__field-wrapper">
           <input name="email" type="email" placeholder="Email" 
-          class="subscribe-form__input"
-          required />
+          class="subscribe-form__input error"
+          required id="js-subscribeEmail" 
+          aria-describedby="js-subscribeEmail-error"
+          aria-invalid="true"/>
+          <span id="js-subscribeEmail-error" class="error">Это поле обязательно</span>
         </div>
         <button type="submit" class="subscribe-form__submit">
         Подписаться</button>
