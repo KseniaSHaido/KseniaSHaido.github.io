@@ -29,6 +29,7 @@
         "Пожалуйста, введите число, большее или равное {0}."
       )
     });
+    
     $.validator.addMethod(
       "email",
       function (value, element) {
@@ -40,6 +41,11 @@
       "Введите корректный e-mail"
     );
           
-    //дальнейший код для валидации форм
+    const eventForm = $('#js-eventForm');
+if (eventForm.length) {
+  eventForm.validate({
+    errorElement: "span"
+  });
+}
           
   })();
