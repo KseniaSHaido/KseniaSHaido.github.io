@@ -1,6 +1,12 @@
 .field {
     display: flex;
     flex-direction: column;
+    label.error,
+    span.error {
+      display: block;
+      margin: 5px 0 0;
+      color: #a51505;
+    }
     &__input,
     &__textarea {
         box-sizing: border-box;
